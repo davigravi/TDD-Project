@@ -20,15 +20,12 @@ describe('reciprocal()', function () {
     })
     context('if num is outside 1 and 1000000', function () {
         it('it should throw a TypeError', function () {
-            
+
             let num1 = 0;
             let num2 = 1000001;
-            // let result1 = reciprocal(num1)
 
-            expect(result1).to.throw(TypeError, 'this number is not between 1 and 1000000');
-            expect(reciprocal(num1)).to.throw(TypeError);
-            expect(reciprocal(num2)).to.throw(TypeError);
-
+            expect(() => reciprocal(num1)).to.throw(TypeError);
+            expect(() => reciprocal(num2)).to.throw(TypeError);
         })
     })
 

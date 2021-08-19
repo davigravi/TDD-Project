@@ -15,7 +15,7 @@ function reciprocal(n) {
   return Number(newNum);
 }
 
-console.log(reciprocal(20000000))
+// console.log(reciprocal(20000000))
 
 module.exports = {
   returnsThree,
